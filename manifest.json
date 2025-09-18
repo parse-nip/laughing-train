@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Whisperer",
+  "description": "Turn messy Chrome sessions into a clean, AI-powered dashboard that summarizes and groups tabs.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Tab Whisperer",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  
+}

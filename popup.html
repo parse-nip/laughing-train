@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tab Whisperer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="header">
+      <div class="brand">
+        <span class="logo">🌀</span>
+        <h1>Tab Whisperer</h1>
+      </div>
+      <div class="actions">
+        <label class="theme-toggle" title="Toggle dark mode">
+          <input type="checkbox" id="darkModeToggle" />
+          <span>🌙</span>
+        </label>
+        <button id="processBtn" class="primary">Summarize & Group</button>
+        <button id="saveBtn" class="secondary">Save Session</button>
+      </div>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search tabs and summaries..." />
+      </div>
+    </header>
+
+    <main id="content" class="content">
+      <div id="emptyState" class="empty">Click "Summarize & Group" to begin.</div>
+      <div id="groupsContainer" class="groups"></div>
+    </main>
+
+    <footer class="footer">
+      <button id="reloadBtn" class="link">Reload Session</button>
+    </footer>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+<noscript>Please enable JavaScript to use Tab Whisperer.</noscript>
+</html>
+
