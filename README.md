@@ -46,4 +46,8 @@ Turn messy Chrome sessions with dozens of tabs into a clean, AI-powered dashboar
 
 - Some sites disallow favicon hotlinking; a Google favicon service is used for display only.
 - This is a Manifest V3 extension; background logic runs in a service worker.
+ - Optional: To enable Chrome's built-in AI, use a recent Chrome Canary/Dev build. Depending on the channel, Summarizer and Prompt APIs may require flags and/or origin trials.
+   - Summarizer: `ai.summarizer` or `chrome.aiOriginTrial.summarizer`
+   - Prompt/Language Model: `ai.languageModel` or `chrome.aiOriginTrial.languageModel`
+   - In chrome://flags search for summarizer/prompt APIs if needed, or enroll the extension in the Prompt API origin trial and add the token.
 
